@@ -1,0 +1,41 @@
+<!-- Made by Mary Karroqe
+	hope you have some fun w your friends ;)
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>lipsync</title>
+	</head>
+	<body style="text-align: center">
+		<p>karaoke/lipsync time</p>
+		<button onclick="songGen();">click for song</button>
+
+		<br /><br />
+		<div id="sassy"></div>
+
+		<script style="text/javascript">
+			function songGen() {
+				var songs = [
+					["Cheerleader", "OMI", "https://youtu.be/Gc8H_68oEoo"],
+					["Body Electric", "Lana Del Rey", "https://youtu.be/Q-zpeUVJb2Q"],
+					["This is What Makes Us Girls", "Lana Del Rey", "https://youtu.be/941DmatcK8M"]
+				]
+
+				rand = songs[Math.floor(Math.random()*songs.length)];
+				
+				theSong = rand[0];
+				theArtist = rand[1];
+				theLink = rand[2];
+
+				display = theSong + " by " + theArtist;
+				document.getElementById("sassy").innerHTML = display;
+			}
+
+		</script>
+
+		<!-- working on getting the youtube link to appear -->
+		<br /> <br />
+		<iframe width="420" height="315" src="" frameborder="0" allowfullscreen></iframe>
+
+	</body>
+</html>
