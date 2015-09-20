@@ -6,7 +6,7 @@
 	<head>
 		<title>lipsync</title>
 	</head>
-	<body style="text-align: center">
+	<body style="text-align: center" onload="init();">
 		<p>karaoke/lipsync time</p>
 		<button onclick="songGen();">click for song</button>
 
@@ -14,6 +14,10 @@
 		<div id="sassy"></div>
 
 		<script style="text/javascript">
+			function init() {
+				console.log("fuck all these errors my code is just fine i do not need this negativity oK");
+			}
+
 			function songGen() {
 				var songs = [
 					["Cheerleader", "OMI", "https://youtu.be/Gc8H_68oEoo"],
