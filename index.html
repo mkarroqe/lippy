@@ -6,7 +6,7 @@
 	<head>
 		<title>lippy</title>
 	</head>
-	<body style="text-align: center" onload="init();">
+	<body style="text-align: center">
 		<p>karaoke/lipsync time</p>
 		<button onclick="songGen();">click for song</button>
 
@@ -36,6 +36,8 @@
 				display = theSong + " by " + theArtist;
 				document.getElementById("sassy").innerHTML = display;
 				document.getElementById('tube').src = theLink;
+
+				init();
 
 			}
 
