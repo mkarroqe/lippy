@@ -1,14 +1,49 @@
 <!-- Made by Mary Karroqe
-	hope you have some fun w your friends ;)
+	 hope you have some fun w your friends ;)
 -->
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<title>lippy</title>
+		<!-- this ugly chunk of text is my favicon sry -->
+		<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4AEAAOABAADwAwAA8AMAAPgHAAD4BwAA/A8AAPwPAAD+HwAA/h8AAP8/AAD/PwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+		<style>
+			body {
+				font-family: Courier New;
+				font-size: 20px;
+				padding-top: 3%;
+			}
+			.btn {
+			  background: #cccccc;
+			  background-image: -webkit-linear-gradient(top, #cccccc, #639abd);
+			  background-image: -moz-linear-gradient(top, #cccccc, #639abd);
+			  background-image: -ms-linear-gradient(top, #cccccc, #639abd);
+			  background-image: -o-linear-gradient(top, #cccccc, #639abd);
+			  background-image: linear-gradient(to bottom, #cccccc, #639abd);
+			  -webkit-border-radius: 28;
+			  -moz-border-radius: 28;
+			  border-radius: 28px;
+			  font-family: Courier New;
+			  color: #ffffff;
+			  font-size: 41px;
+			  padding: 10px 20px 10px 20px;
+			  border: dotted #1f628d 0px;
+			  text-decoration: none;
+			}
+
+			.btn:hover {
+			  background: #639abd;
+			  background-image: -webkit-linear-gradient(top, #639abd, #cccccc);
+			  background-image: -moz-linear-gradient(top, #639abd, #cccccc);
+			  background-image: -ms-linear-gradient(top, #639abd, #cccccc);
+			  background-image: -o-linear-gradient(top, #639abd, #cccccc);
+			  background-image: linear-gradient(to bottom, #639abd, #cccccc);
+			  text-decoration: none;
+			}
+		</style>
 	</head>
 	<body style="text-align: center">
-		<p>karaoke/lipsync time</p>
-		<button onclick="songGen();">click for song</button>
+		<button class="btn" onclick="songGen();">&#9834 gimme &#9834</button>
 
 		<br /><br />
 		<div id="sassy"></div>
@@ -44,8 +79,9 @@
 					["Rehab", "Amy Winehouse", "https://www.youtube.com/embed/JjW5ygsyjTI"],
 					["White and Nerdy", "Weird Al Yankovic", "https://www.youtube.com/embed/JZjBZQPhEnE"],
 					["Bohemian Rhapsody", "Queen", "https://www.youtube.com/embed/R3_0Pky8vVg"],
-					["Papa Don't Preach", "Madonna", "https://www.youtube.com/embed/bn9ovbJxKic"]
-
+					["Papa Don't Preach", "Madonna", "https://www.youtube.com/embed/bn9ovbJxKic"],
+					["OMG", "Usher", "https://www.youtube.com/embed/gkBvuhBBhvA"],
+					["Call Me Maybe", "Carly Rae Jepsen", "https://www.youtube.com/embed/XucmoWQmO5E"]
 				]
 
 				rand = songs[Math.floor(Math.random()*songs.length)];
@@ -65,7 +101,7 @@
 		</script>
 
 		<br /> <br />
-		<iframe width="420" height="315" frameborder="0" src="" id="tube" allowfullscreen></iframe>
+		<iframe width="100%" height="500" frameborder="0" src="" id="tube" allowfullscreen></iframe>
 
 	</body>
 </html>
