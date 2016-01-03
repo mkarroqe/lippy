@@ -1,14 +1,49 @@
 <!-- Made by Mary Karroqe
-	hope you have some fun w your friends ;)
+	 hope you have some fun w your friends ;)
 -->
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>lipsync</title>
+		<title>lippy</title>
+		<!-- this ugly chunk of text is my favicon sry -->
+		<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4AEAAOABAADwAwAA8AMAAPgHAAD4BwAA/A8AAPwPAAD+HwAA/h8AAP8/AAD/PwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+		<style>
+			body {
+				font-family: Courier New;
+				font-size: 20px;
+				padding-top: 3%;
+			}
+			.btn {
+			  background: #cccccc;
+			  background-image: -webkit-linear-gradient(top, #cccccc, #639abd);
+			  background-image: -moz-linear-gradient(top, #cccccc, #639abd);
+			  background-image: -ms-linear-gradient(top, #cccccc, #639abd);
+			  background-image: -o-linear-gradient(top, #cccccc, #639abd);
+			  background-image: linear-gradient(to bottom, #cccccc, #639abd);
+			  -webkit-border-radius: 28;
+			  -moz-border-radius: 28;
+			  border-radius: 28px;
+			  font-family: Courier New;
+			  color: #ffffff;
+			  font-size: 41px;
+			  padding: 10px 20px 10px 20px;
+			  border: dotted #1f628d 0px;
+			  text-decoration: none;
+			}
+
+			.btn:hover {
+			  background: #639abd;
+			  background-image: -webkit-linear-gradient(top, #639abd, #cccccc);
+			  background-image: -moz-linear-gradient(top, #639abd, #cccccc);
+			  background-image: -ms-linear-gradient(top, #639abd, #cccccc);
+			  background-image: -o-linear-gradient(top, #639abd, #cccccc);
+			  background-image: linear-gradient(to bottom, #639abd, #cccccc);
+			  text-decoration: none;
+			}
+		</style>
 	</head>
 	<body style="text-align: center">
-		<p>karaoke/lipsync time</p>
-		<button onclick="songGen();">click for song</button>
+		<button class="btn" onclick="songGen();">&#9834 gimme &#9834</button>
 
 		<br /><br />
 		<div id="sassy"></div>
@@ -20,28 +55,53 @@
 
 			function songGen() {
 				var songs = [
-					["Cheerleader", "OMI", "https://youtu.be/Gc8H_68oEoo"],
-					["Body Electric", "Lana Del Rey", "https://youtu.be/Q-zpeUVJb2Q"],
-					["This is What Makes Us Girls", "Lana Del Rey", "https://youtu.be/941DmatcK8M"]
+					["Cheerleader", "OMI", "https://www.youtube.com/embed/Gc8H_68oEoo"],
+					["Body Electric", "Lana Del Rey", "https://www.youtube.com/embed/Q-zpeUVJb2Q"],
+					["This is What Makes Us Girls", "Lana Del Rey", "https://www.youtube.com/embed/941DmatcK8M"],
+					["Take Me to Church", "Hozier", "https://www.youtube.com/embed/Xp4WKejt12Y"],
+					["Shake It Off", "Taylor Swift", "https://www.youtube.com/embed/m0A3Ph4dRrk"],
+					["Single Ladies", "Beyonce", "https://www.youtube.com/embed/g0olJFaTY-8"],
+					["Empire State of Mind", "Jay Z ft Alicia Keys", "https://www.youtube.com/embed/nFqgJdw5b_4"],
+					["Firework", "Katy Perry", "https://www.youtube.com/embed/APMRiliOfOo"],
+					["Tik Tok", "Ke$ha", "https://www.youtube.com/embed/clLOPz-eof8"],
+					["Let's Call the Whole Thing Off", "Ella Fitzgerald & Louis Armstrong", "https://www.youtube.com/embed/Dg2HKMFsers"],
+					["Boogie Shoes", "K.C. and the Sunshine Band", "https://www.youtube.com/embed/7vHlqBt8mO0"],
+					["Papa Loves Mambo", "Perry Como", "https://www.youtube.com/embed/ujB-BZn3C4g"],
+					["San Francisco", "The Mowgli's", "https://www.youtube.com/embed/2ze-i5TDETc"],
+					["Do I Wanna Know", "The Arctic Monkeys", "https://www.youtube.com/embed/_qkrhx9pULY"],
+					["I'll Follow You Into the Dark", "Death Cab for Cutie", "https://www.youtube.com/embed/NDHY1D0tKRA"],
+					["Baby", "Justin Bieber", "https://www.youtube.com/embed/Uim4GwSfzxY"],
+					["The A-Team", "Ed Sheeran", "https://www.youtube.com/embed/GkWj_QFgn-s"],
+					["22", "Taylor Swift", "https://www.youtube.com/embed/upZ_q9CdXl4"],
+					["Blank Space", "Taylor Swift", "https://www.youtube.com/embed/Iu1SeuRLAmg"],
+					["Thrift Shop", "Macklemore ft. Ryan Lewis", "https://www.youtube.com/embed/p9mmhh_wvkA"],
+					["Thriller", "Micheal Jackson", "https://www.youtube.com/embed/xIx_HbmRnQY"],
+					["Rehab", "Amy Winehouse", "https://www.youtube.com/embed/JjW5ygsyjTI"],
+					["White and Nerdy", "Weird Al Yankovic", "https://www.youtube.com/embed/JZjBZQPhEnE"],
+					["Bohemian Rhapsody", "Queen", "https://www.youtube.com/embed/R3_0Pky8vVg"],
+					["Papa Don't Preach", "Madonna", "https://www.youtube.com/embed/bn9ovbJxKic"],
+					["OMG", "Usher", "https://www.youtube.com/embed/gkBvuhBBhvA"],
+					["Call Me Maybe", "Carly Rae Jepsen", "https://www.youtube.com/embed/XucmoWQmO5E"]
 				]
 
 				rand = songs[Math.floor(Math.random()*songs.length)];
 				
 				theSong = rand[0];
 				theArtist = rand[1];
-				theLink = rand[2];
+				var theLink = rand[2];
 
 				display = theSong + " by " + theArtist;
 				document.getElementById("sassy").innerHTML = display;
+
+				document.getElementById('tube').src = theLink;
 
 				fyi();
 			}
 
 		</script>
 
-		<!-- working on getting the youtube link to appear -->
 		<br /> <br />
-		<iframe width="420" height="315" src="" frameborder="0" allowfullscreen></iframe>
+		<iframe width="100%" height="500" frameborder="0" src="" id="tube" allowfullscreen></iframe>
 
 	</body>
 </html>
